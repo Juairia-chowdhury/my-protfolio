@@ -3,7 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Juairia's Portfolio </title>
+    <title>Juairia's Portfolio</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #130101;
+            color: white;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2B0350;
+            padding: 10px 50px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #FA0C8F;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: white;
+        }
+
+        /* Main Sections */
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 100px 50px;
+        }
+        .leftsection {
+            width: 45%;
+        }
+        .leftsection h1 {
+            color: rgba(104, 243, 243, 0.61);
+        }
+        .leftsection .button-group {
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #947AF8;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #D682F0;
+        }
+        .rightsection img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Sections */
+        .section-title {
+            text-align: center;
+            color: gray;
+            margin: 50px 0 20px;
+            font-size: 2rem;
+        }
+        .section-content {
+            max-width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Experience */
+        .experience {
+            background-color: #252525;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Work Experience */
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .vertical {
+            background: #1c1c1c;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            color: white;
+        }
+        .image-top {
+            width: 80px;
+            height: auto;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 500px;
+        }
+        form label {
+            margin-bottom: 5px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #947AF8;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        form button:hover {
+            background-color: #D682F0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #020641;
+            text-align: center;
+            padding: 20px;
+            color: gray;
+            margin-top: 30px;
+        }
+        footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        footer ul li {
+            margin: 0 15px;
+        }
+        footer ul li a {
+            color: #4444F1;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -33,19 +210,15 @@
                 </div>
             </div>
             <div class="rightsection">
-                <img  src="https://img.freepik.com/premium-vector/muslim-woman-operator_1260528-9.jpg?" width="300"height="350">
-               <img src = "https://img.freepik.com/premium-vector/muslim-cutomer-service-flat-design_631760-61.jpg"width="300"height="350">
+               
+                <img src = "https://img.freepik.com/premium-vector/muslim-cutomer-service-flat-design_631760-61.jpg"width="300"height="350">
           
         </section>
 
         <!-- About Section -->
         <section id="about" class="section-content">
             <h2 class="section-title">About Me</h2>
-          <P> Hello! <h3>I’m Juairia</h3>  3rd-year  Computer Science and Engineering student at Metropolitan University</P>
-            <p>a web developer with expertise in HTML, CSS, JavaScript, and more. I’m driven by a passion for crafting clean, user-friendly web experiences.</p>
-
-
-    <p>My goal is to create impactful web experiences that enhance usability and accessibility for all users. I believe in the power of technology to connect people and improve lives, and I am excited to contribute to this vision through my work.</p>
+            <p>Hello! I’m Juairia Chowdhury, a web developer with expertise in HTML, CSS, JavaScript, and more. I’m driven by a passion for crafting clean, user-friendly web experiences.</p>
         </section>
 
         <!-- Experience Section -->
